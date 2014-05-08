@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<title>Retro Portfolio by andersdenkend</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />	
+	<link href="css/style.css"	rel="stylesheet" type="text/css" />
+	
+	<!-- fontstyles from googleapis -->
+	<link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'/>
+
+	<!-- Javascript Library -->
+	<script type="text/javascript" src="scripts/jquery-1.7.2.js" ></script>
+
+	<!-- Position Indicator -->
+	<script type="text/javascript" src="scripts/position.js"></script> 
+
+	<!-- Animate Color -->
+	<script type="text/javascript" src="scripts/jquery.animate-colors-min.js"></script> 	
+	
+	<!-- Hover Animation in Navi and Contact -->
+	<script type="text/javascript" src="scripts/hoverAnimations.js"></script>
+	
+	<!-- Smooth Scrolling Function -->
+	<script type="text/javascript" src="scripts/smooth-scroll.js" ></script>
+
+	<!-- Welcome: Nivo Slide Show -->
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script> 
+    <script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+    </script>
+	
+	<!-- About Me: Skill Function -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#skill_1").fadeOut(0);
+		$("#skill_2").fadeOut(0);
+		$("#skill_3").fadeOut(0);
+		$("#skill_4").fadeOut(0);
+		$("#skill_5").fadeOut(0);
+		$("#skill_6").fadeOut(0);
+	});
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var myPosY;
+		
+		$(window).bind( 'scroll', function() {
+			myPosY = $(window).scrollTop();
+
+			if ( myPosY > 501  ) {
+				$("#skill_1").fadeIn(3000);
+				$("#skill_2").fadeIn(2500);
+				$("#skill_3").fadeIn(2000);
+				$("#skill_4").fadeIn(1500);
+				$("#skill_5").fadeIn(1000);
+				$("#skill_6").fadeIn(500);
+			}
+		});
+	});
+	</script>
+	
+	<!--porftfolio: quicksand -->
+    <script type="text/javascript" src="scripts/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>	
+
+	<!-- portfolio: Fancybox -->
+	<script type="text/javascript" src="scripts/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="scripts/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" /> 
+
+	<!-- fadein and fadeout Fancybox -->
+	<script type="text/javascript" src="scripts/fadeInAndOut.js"></script>
+	
+	<!-- contact: jquery-simple-validate -->
+	<script type="text/javascript" src="scripts/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="scripts/jquery.contactable.js"></script>
+	<link rel="stylesheet" href="css/contactable.css" type="text/css" />
+	<script type="text/javascript">
+		$(function(){$('#contactable').contactable({subject: 'feedback URL:'+location.href});});
+	</script>	
+		
+	<script type="text/javascript" > 
+		  
+		/* User Agent (Browser Kennung)*/  
+	 	function checkBrowserName(name){  
+			var agent = navigator.userAgent.toLowerCase();  
+			if (agent.indexOf(name.toLowerCase())>-1) {  
+				return true;  
+			}  
+			return false;  
+		}  	
+	</script> 	
+
+	<script type="text/javascript">
+		function browserMargin() {
+
+			// Change: Internet Explorer
+			if(checkBrowserName('MSIE')){  
+				document.getElementById("nav").style.marginTop= "16px"; 
+				$('#column4').css('marginTop', '700px'); 
+				$('#column5').css('marginTop', '970px');
+				$('.logo').css('marginTop', '-50px');
+				$('.logo').css('marginLeft', '16px');
+				$('.logo2').css('marginTop', '-7px');
+				$('#position4').css('marginTop', '6px');
+				$('#position3').css('marginTop', '6px');
+				$('#zwei, #eins').css('marginTop', '0px');
+				$('.nav_right').css('top', '-30px');
+				$('.nav_right').css('marginLeft', '10px');
+				
+			}  
+			// Change: Opera		  
+			if(checkBrowserName('opera')){  
+				document.getElementById("nav").style.marginTop= "16px";
+				$('.logo').css('marginTop', '-50px');
+				$('.logo2').css('marginTop', '-7px');
+				$('#zeiger').css('marginTop', '-70px'); 
+				$('.nav_right').css('top', '-30px');
+				$('.logo').css('marginLeft', '12px');
+				$('#position4').css('marginTop', '4px');
+			}  
+		}
+	</script>	
+
+
+	
+	
+</head>
+<body onload="browserMargin()">
+		<!-- ...................................................................................................................
+															H E A D E R
+		.................................................................................................................... -->
+		<div id="header" >
+			<div id="headerInner">
+				<div id="background">
+					<img src="images/header_left.png" alt="Banner-rechts" width="286" height="166" />
+					<img src="images/header_middle.png" alt="Header-middle" width="388" height="166" />
+					<img src="images/header_right.png" alt="Banner-rechts" width="286" height="166" />
+				</div>	
+				<div id="zeiger" >
+					<img src="images/header_arrow.png" alt="" width="19" height="9" />
+				</div>
+				<div id="overlay" >
+					<!-- <a href="#jumptop">about</a> -->
+				</div>
+				<div id="nav">
+					<ul >
+						<li id="nav_1" ><a href="#jump1" ><span id="eins" >ABOUT ME</span></a></li>
+						<li><a href="#jump2" ><span id="zwei" >PORTFOLIO</span></a></li>
+						<li class="logo" > 	
+							<hr noshade="noshade" size="1" id="shade_1_left" />
+							<p>ANDERSDENKEND PRESENTS</p>
+							<hr noshade="noshade" size="1" id="shade_1_right" /> 	
+						</li>
+						<li class="logo2" >
+							<p>RETRO PORTFOLIO</p> 
+						</li>
+						<li><a href="#jump3" class="nav_right" ><span id="drei" >FEATURES</span></a></li>
+						<li><a href="#jump4" class="nav_right" ><span id="vier" >CONTACT</span></a></li>
+					</ul>
+				</div>
+			</div>	<!-- end of HeaderInner -->
+		</div>	<!-- E N D   O F   H E A D E R -->
+
+		<!-- ...................................................................................................................
+															C O N T E N T
+		.................................................................................................................... -->
+		<div id="content">
+		
+			<!-- .....................
+			Content	Section: Welcome
+			...................... -->
+			<div id="welcome">	
+				<div id="welcomeInner">
+					<span id="jumptop"></span> 
+					<div class="head" >
+						<h5><i>Welcome</i></h5>
+					</div>
+					<div class="middle" >
+						<div id="frame_slide">
+							<img src="images/frame_slider.png" alt="test" width="100%" height="405" /> 
+						</div>
+						<!-- ......... Slider ......... -->
+						<div class="slider-wrapper theme-default">
+							<div id="slider" class="nivoSlider">
+								<img src="images/gallery/slider1.jpg" data-thumb="images/gallery/slider1.jpg" alt="" title="Andersdenkend presents" />
+								<img src="images/gallery/slider4.jpg" data-thumb="images/gallery/slider4.jpg" alt="" data-transition="fold" title="Retro Portfolio" /> 
+								<img src="images/gallery/slider2.jpg" data-thumb="images/gallery/slider2.jpg" alt="" data-transition="slideInLeft" title="This is an example of a caption"/>
+								<img src="images/gallery/slider3.jpg" data-thumb="images/gallery/slider3.jpg" alt="" title="#htmlcaption" />
+								<img src="images/gallery/slider5.jpg" data-thumb="images/gallery/slider5.jpg" alt="" title="Fusion von Gestaltung und Programmierung" />
+							</div>
+							<div id="htmlcaption" class="nivo-html-caption">
+								<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="http//www.anders.denkend.net">a link</a>. 
+							</div>	
+						</div>
+						<!-- ....... end Slider ....... -->	
+					</div>
+				</div>	<!-- end of Section Content  WelcomeInner -->
+			 <div class="bottom" >&nbsp;</div> 
+			</div>	<!-- end of Section Content  Welcome -->
+
+			<!-- .....................
+			Content	Section: About Me
+			...................... -->			
+			<div  id="aboutme">
+				<div id="aboutmeInner">
+					<span id="jump1" ></span>
+					<div class="head">
+						<h5>About Me</h5>
+					</div>	
+					<div class="middle">
+						<div class="columnTop" >
+							<hr id="shade_2_left" noshade="noshade" width="25%" size="2" />
+							<h3>John Doe born 1980 in Vienna, Austria</h3>
+							<hr id="shade_2_right" noshade="noshade" width="24%" size="2" />
+						</div>
+						<h3></h3>
+						<div class="middle_left" >
+							<img src="images/gallery/aboutme_potrait.jpg" alt="test" width="292" height="105" class="first_image" />
+							<img src="images/frame_aboutme.png" alt="test" width="300" height="122" class="second_image" />
+							<p class="middle_p" align="justify">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p><br />
+							<p align="justify">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec dasa consequat ipsum.</p>
+						</div>
+						<div class="middle_middle" >
+								<p align="justify">waks version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Morbi accumsan ipsum velit. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Itae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,</p>
+						</div>
+						<div class="middle_right" >
+							<p>proin gravida nibh vel velit auctor aliquet Ga. Ae sollicitudin, lorem quis bibendum auctor,</p><br />
+							<ul>
+								<li><p>Sagittis sem nibh</p></li>
+								<li><p>Vulputate cursus a sit</p></li>
+								<li><p>Amet mauris</p></li>
+								<li><p>Morbi accumsan ipsum velit</p></li>
+								<li><p>Nam nec tellus</p></li>
+								<li><p>Tincidunt auctor</p></li>
+								<li><p>Sed non mauris vitae</p></li>
+								<li><p>Morbi accumsan mauris vitae</p></li>
+							</ul>
+						</div> 
+					</div>
+					<div class="bottomInner">
+						<hr id="shade_3_left" noshade="noshade" width="35%" size="2" />
+						<h3>Skills &amp; Knowledge</h3>
+						<hr id="shade_3_right" noshade="noshade" width="35%" size="2" />
+						
+						<!-- ......... Skill Function ......... -->
+						<div id="skills" >
+							<div id="skill_1" >
+								<img src="images/skills_50.png" width="140" height="140" alt="" />
+								<h4>Photoshop</h4>
+								<h6>50%</h6>
+							</div>
+							<div id="skill_2" >
+								<img src="images/skills_60.png" width="140" height="140" alt="" />
+								<h4>Javascript</h4>
+								<h6>60%</h6>
+							</div>
+							<div id="skill_3" >
+								<img src="images/skills_70.png" width="140" height="140" alt="" />
+								<h4>xhtml</h4>
+								<h6>70%</h6>
+							</div>
+							<div id="skill_4" >
+								<img src="images/skills_80.png" width="140" height="140" alt="" />
+								<h4>Illustrator</h4>
+								<h6>80%</h6>
+							</div>
+							<div id="skill_5" >
+								<img src="images/skills_90.png" width="140" height="140" alt="" />
+								<h4>JQuery</h4>
+								<h6>90%</h6>
+							</div>
+							<div id="skill_6" >
+								<img src="images/skills_100.png" width="140" height="140" alt="" />
+								<h4>Wordpress</h4>
+								<h6>100%</h6>
+							</div>						
+						</div>	
+						<!-- ....... End Skill Function ....... -->
+						<a href="#jumptop"><span class="gotop" id="position1" ></span></a>
+					</div>
+				</div>	<!-- end of Section Content  About MeInner -->
+				<div class="bottom" >&nbsp;</div>
+				
+			</div>	<!-- end of Section Content  About Me -->
+
+			<!-- .....................
+			Content	Section: Portfolio
+			...................... -->			
+			<div id="portfolio">
+				<span id="jump2"></span>
+				<div id="portfolioInner">
+					<div class="head" >
+						<h5>Portfolio</h5>
+					</div>	
+					<div id="portfolioNavi" >
+						<img class="picture" src="images/portfolio_ribbon_left.png" width="77" height="66" alt="image1" /> 
+						<span id="filter" class="active" ></span>						
+						<img class="picture" src="images/portfolio_ribbon_right.png" width="77" height="66" alt="image1" /> 
+					</div>
+					<div id="quicksand" >
+						<ul id="stage" >
+							<li data-tags="WEB DESIGN">
+								<div class="topTitle" >
+									<hr class="hrLeft" noshade="noshade" width="42" size="2" />
+									<p >PHOTOGRAFIE</p>
+									<hr class="hrRight" noshade="noshade" width="42" size="2" />
+								</div>
+								<a class="foto" id="image1" href="images/gallery/slider1.jpg" title="Image Preview" >
+									<img class="picture" src="images/gallery/image1_tbn.jpg" width="188" height="125" alt="image1" />
+									<span class="h8" >THE GIANT</span>
+									<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button"  />
+								</a>
+							</li>
+							<li data-tags="ILLUSTRATION" >
+								<div class="topTitle" >
+									<hr class="hrLeft" noshade="noshade" width="40" size="2" />
+									<p>ILLUSTRATION</p>
+									<hr class="hrRight" noshade="noshade" width="40" size="2" />
+								</div>
+								<a class="foto" id="image2" href="images/gallery/slider2.jpg" title="Image Preview" >
+								<img class="picture" src="images/gallery/image2_tbn.jpg" width="188" height="125" alt="image2" />
+								<span class="h8" >COSMIC EDGE</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>
+							<li data-tags="LOGO" >
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="65" size="2"/>
+									<p>LOGO</p>
+									<hr class="hrRight" noshade="noshade" width="65" size="2" />
+								</div>
+								<a class="foto" id="image3" href="images/gallery/slider3.jpg" title="Image Preview" >
+								<img class="picture" src="images/gallery/image3_tbn.jpg" width="188" height="125" alt="image3" />
+								<span class="h8" >CUBIST</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>
+							<li data-tags="BRANDING">
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="52" size="2" />
+									<p>BRANDING</p>
+									<hr class="hrRight" noshade="noshade" width="52" size="2" />
+								</div>
+								<a class="foto" id="image5" href="images/gallery/slider4.jpg" title="Image Preview" >
+								<img class="picture" src="images/gallery/image5_tbn.jpg" width="188" height="125" alt="image5" />
+								<span class="h8" >COHESION</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>												
+		<!-- h264 Video -->	<li data-tags="VIDEO" >
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="63" size="2" />
+									<p>VIDEO</p>
+									<hr class="hrRight" noshade="noshade" width="63" size="2" />
+								</div>
+								<a class="video" href="http://www.youtube.com/watch?v=p9isboDgxMM" id="video1" title="Barcelona by Albin Holmqvist" >
+								<img class="picture" src="images/gallery/video2_tbn.jpg" width="188" height="125" alt="video1" />
+								<span class="h8" >BARCELONA</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>
+							<li data-tags="WEB DESIGN" >
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="46" size="2" />
+									<p>WEB DESIGN</p>
+									<hr class="hrRight" noshade="noshade" width="46" size="2" />
+								</div>
+								<a class="foto" id="image7" href="images/gallery/slider5.jpg" title="Image Preview" >
+								<img class="picture" src="images/gallery/image4_tbn.jpg" width="188" height="125" alt="image7" />
+								<span class="h8" >Project Title</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>	<!-- onmouseover="fade('video2')" onmouseout="fade('video2')" -->
+		 <!-- SWF Video --> <li data-tags="VIDEO" >
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="63" size="2" />
+									<p>VIDEO</p>
+									<hr class="hrRight" noshade="noshade" width="63" size="2" />
+								</div>
+								<a class="iframe" href="http://player.vimeo.com/video/18886355" id="video2" title="Barcelona by Albin Holmqvist" >
+								<img class="picture" src="images/gallery/video1_tbn.jpg" width="188" height="125" alt="video2" />
+								<span class="h8" >Project Title</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button" />
+								</a>
+							</li>
+		   <!-- Website -->	<li data-tags="WEB DESIGN,LOGO" class="last" >
+								<div class="topTitle">
+									<hr class="hrLeft" noshade="noshade" width="46" size="2" />
+									<p>WEB DESIGN</p>
+									<hr class="hrRight" noshade="noshade" width="46" size="2" />
+								</div>
+								<a class="web1" href="http://graphicriver.net/user/andersdenkend/portfolio" id="web1" title="Our Portfolio" >
+								<img class="picture" src="images/gallery/image6_tbn.jpg" width="188" height="125" alt="web1" />
+								<span class="h8" >Project Title</span>
+								<img class="frame" src="images/frame_portfolio.png" width="210" height="282" alt="klick_button"  />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#jumptop"><span class="gotop" id="position2" ></span></a>
+				</div>	<!-- end of Section Content  portfolioInner -->
+				<div class="bottom" >&nbsp;</div>				
+			</div>	<!-- end of Section Content  portfolio -->
+
+			<!-- .....................
+			Content	Section: Features
+			...................... -->	
+			<div id="features">
+				<div id="featuresInner" >
+					<span id="jump3" ></span>
+					<div class="head">
+						<h5>Features</h5>
+					</div>
+					<div id="column1" >
+						<div class="columnTop" >
+							<hr class="hrLeft" noshade="noshade" width="382px" size="2" />
+							<h3>Three Columns</h3>
+							<hr class="hrRight" noshade="noshade" width="382px" size="2" />
+						</div>
+						<ul>
+							<li class="justiLeft"><p align="justify">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat </p></li>
+							<li class="justiMiddle"><p align="justify">is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec </p></li>
+							<li><p align="justify">version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p></li>
+						</ul>
+					</div>
+					<div id="column2" >
+						<div class="columnTop" >
+							<hr class="hrLeft" noshade="noshade" width="322px" size="2" />
+							<h3>Two Columns, right small</h3>
+							<hr class="hrRight" noshade="noshade" width="322px" size="2" />
+						</div>
+						<ul>
+							<li class="longColumn"><strong>This is a bold version of Lorem Ipsum.</strong><p align="justify">&nbsp; Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare ed non  mauris </p></li>
+							<li class="smallColumn"><p align="justify">is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor ipsum, nec sagittis.</p></li>
+						</ul>	
+					</div>
+					<div id="column3">
+						<div class="columnTop" >
+							<hr class="hrLeft" noshade="noshade" width="325px" size="2" />
+							<h3>Two Columns, half &amp; half</h3>
+							<hr class="hrRight" noshade="noshade" width="325px" size="2" />
+						</div>
+						<ul>
+							<li class="justiLeft"><p align="justify">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p></li>
+							<li class ="justiRight"><p align="justify">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.</p></li>
+						</ul>	
+					</div>	
+					<div id="column4">
+						<div class="columnTop" >
+							<hr class="hrLeft" noshade="noshade" width="395" size="2" />
+							<h3>Blockquotes</h3>
+							<hr class="hrRight" noshade="noshade" width="395" size="2" />
+						</div>
+						<ul >
+							<li class="firstLi" ><span class="leftBlockquote">"This is a Left Blockquote"</span><p align="justify">Einmal und heute wieder dies neue version of Lorem Ipsum. Proin gravida nibh vel velit auctor salaaliquet. Aenean sollicitudin, lorem quis nanako bibendum auctor.</p></li>
+							<li><span class="rightBlockquote">"This is a Right Blockquote"</span><p align="justify">This is our new kala version of version of Lorem Ipsum. Proin gravida nibh vel velit auctor caaliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p></li>
+						</ul>	
+					</div>
+					<div id="column5" >
+						<div class="columnTop" >
+							<hr class="hrLeft" noshade="noshade" width="408px" size="2" />
+							<h3>Highlights</h3>
+							<hr class="hrRight" noshade="noshade" width="408px" size="2" />
+						</div>
+						<ul>
+							<li class="redhighlight"><p align="justify">This is&nbsp;<strong>red highlighted version</strong>&nbsp;of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solli citudin, lorem quis bib end um auctor ipsum.</p></li>
+							<li class="greenmarked"><p align="justify">This is Photoshop's version of Lorem Ipsum.&nbsp;<strong>A nice green marked text.</strong>&nbsp;Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p></li>
+							<li class="dotted"><p align="justify"> This is&nbsp;<strong>doted higlighted version</strong>&nbsp;of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p></li>
+						</ul>
+					</div>
+					<a href="#jumptop"><span class="gotop" id="position3" ></span></a>
+				</div>	<!-- end of Section Content  FeaturesInner -->
+				<div class="bottom">&nbsp;</div>
+			</div>	<!-- end of Section Content  Features -->
+			
+			<!-- .....................
+			Content	Section: Contact
+			...................... -->			
+			<div id="contact">
+				<div id="contactInner">
+					<span id="jump4" ></span>
+					<div class="head">
+						<h5>Contact</h5>
+					</div>		
+					<div class="middle" >
+						<ul >
+							<li class="firstLi" >			
+								<hr class="firstHr" noshade="noshade" width="21%" size="3" />
+								<h1>Drop a Message</h1>
+								<hr class="secondHr" noshade="noshade" width="21%" size="3"/>
+							</li>
+							<li class="secondLi" >
+								<hr class="firstHr" noshade="noshade" width="24%" size="3" />
+								<h1>Get in touch</h1>
+								<hr class="secondHr" noshade="noshade" width="24%" size="3" />
+							</li>
+						</ul>
+						<div id="contactable" ><!-- contactable html placeholder --></div>
+						<div id="right" >
+							<table >
+								<tr>
+									<td colspan="1" >
+										<strong>John Doe</strong>
+										<p>Your Street 123</p>
+										<p>12345 Your City</p>
+										<p>Your Country</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Phone</strong><p>0123-4567890</p>
+									</td>
+									<td>
+										<strong>Fax</strong><p>01234-567890</p>
+									</td>
+								</tr>
+							</table>
+							<strong>Website</strong>
+							<p><a id="right_link" href="http://www.anders.denkend.net">www.anders.denkend.net</a></p>
+							<div id="rightsocial" >
+								<hr class="firstHr" noshade="noshade" width="21%" size="3" />
+								<h1>Get Connected</h1>
+								<hr class="secondHr" noshade="noshade" width="21%" size="3" />
+								<ul>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_facebook_b.png'" onmouseout="this.src='images/social/social_facebook.png'" src="images/social/social_facebook.png" width="36" height="36" alt="button_facebook" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_twitter_b.png'" onmouseout="this.src='images/social/social_twitter.png'" src="images/social/social_twitter.png" width="36" height="36" alt="button_twitter" /></a>
+									</li>
+									<li>		
+										<a href=""><img onmouseover="this.src='images/social/social_behance_b.png'" onmouseout="this.src='images/social/social_behance.png'" src="images/social/social_behance.png" width="36" height="36" alt="button_behance" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_drible_b.png'" onmouseout="this.src='images/social/social_drible.png'" src="images/social/social_drible.png" width="36" height="36" alt="button_drible" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_yahoo_b.png'" onmouseout="this.src='images/social/social_yahoo.png'" src="images/social/social_yahoo.png" width="36" height="36" alt="button_yahoo" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_flickr_b.png'" onmouseout="this.src='images/social/social_flickr.png'" src="images/social/social_flickr.png" width="36" height="36" alt="button_flickr" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_skype_b.png'" onmouseout="this.src='images/social/social_skype.png'" src="images/social/social_skype.png" width="36" height="36" alt="button_skype" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_rss_b.png'" onmouseout="this.src='images/social/social_rss.png'" src="images/social/social_rss.png" width="36" height="36" alt="button_rss" /></a>
+									</li>
+									<li>
+										<a href=""><img onmouseover="this.src='images/social/social_myspace_b.png'" onmouseout="this.src='images/social/social_myspace.png'" src="images/social/social_myspace.png" width="36" height="36" alt="button_myspace" /></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<a href="#jumptop"><span class="gotop" id="position4" ></span></a>
+				</div>	<!-- end of Section Content  ContactInner -->
+			</div>	<!-- end of Section Content  Contact -->
+		</div>	<!-- E N D   O F   C O N T E N T --> 
+		
+		<!-- ...................................................................................................................
+															F O O T E R
+		.................................................................................................................... -->		
+		<div id="footer">
+			<div id="ribbon" >				 
+				<img class="picture" src="images/ribbon_small.png" width="340" height="100" alt="image4" />
+				<h5>THANK YOU FOR VISITING!</h5>
+				<p>&copy; 2012 andersdenkend, All rights reserved</p>
+			</div>
+		</div>	<!-- E N D   O F   F O O T E R -->	
+
+		
+		
+</body>
+</html>

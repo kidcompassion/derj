@@ -1,0 +1,119 @@
+
+
+#contactable #contactForm {
+	color:#FFFFFF;
+	margin-left:0px;
+	overflow:hidden;
+	width:450px;
+	z-index:99;
+}
+
+#contactable form#contactForm input {
+	background:#373737 none repeat scroll 0 0;
+	outline-style:none;
+	outline-width:medium;
+	width:430px;
+	height:40px;
+	padding:5px;
+	border:1px solid #cebca5;
+	font-size:1.2em;
+	margin-bottom:10px;
+	color:#fbefda;
+	font-family:Yanone Kaffeesatz;
+}
+
+#contactable form#contactForm textarea {
+	background:#373737 none repeat scroll 0 0;
+	outline-style:none;
+	outline-width:medium;
+	width:430px;
+	padding:5px;
+	border:1px solid #cebca5;
+	font-size:1.2em;
+	margin-bottom:10px;
+	color:#fbefda;
+	font-family:Yanone Kaffeesatz;
+}
+
+#contactable label {letter-spacing:0.5px;}
+
+#contactable form#contactForm .submit {
+	//background-image: url(../images/btn_send.png);
+	//background-repeat:no-repeat;
+	background-color:#5b5557;
+	border:0;
+	width:442px;
+	height:40px;
+	font-size:1.2em;
+	cursor:pointer;
+	color:#362d30;
+	font-weight:bolder;
+	margin-top:10px;
+	margin-left:0px;
+}
+
+/*
+#contactable form#contactForm .submit:hover {
+	color:#bf4d28;
+}
+*/
+
+
+#contactable form#contactForm p {
+	width:325px;
+	font-size:0.9em;
+	color:#fbefda;
+}
+
+#contactable form#contactForm .disclaimer {
+	*margin-left:20px;
+}
+
+#contactable #contactForm .red {
+	color:	#bf4d28;
+}
+
+#contactable #overlay {
+	background-color:#666666;
+	display:none;
+	height:100%;
+	left:0;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+} 
+#contactable .error { background-image:url(../images/ribbon_alert.png); background-repeat:no-repeat; background-position:480px; }
+
+#contactable #name.error { background-image:url(../images/ribbon_alert.png); background-repeat:no-repeat; background-position:390px center; } 
+#contactable #email.error { background-image:url(../images/ribbon_alert.png); background-repeat:no-repeat; background-position:390px center;}
+#contactable #message.error { background-image:url(../images/ribbon_alert.png); background-repeat:no-repeat; background-position:390px center;}
+
+#contactable form#contactForm label{
+	*margin-left:20px;
+}
+
+#contactable form#contactForm #loading {
+	background: url(../images/contact/loading_blue.gif) no-repeat;
+	width:55px;
+	height:55px;
+	margin: 100px auto;
+	display:none;
+}
+
+#contactable #callback {
+	font-size:1.1em;
+	color: #fbefda;
+	width:325px;
+	margin: 100px auto;	
+	display:none;
+}
+
+
+#contactable .holder {
+	margin:0 auto;
+	*margin-left:20px;
+	padding-top:20px;	
+}	

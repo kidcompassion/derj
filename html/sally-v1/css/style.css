@@ -1,0 +1,962 @@
+/* CSS-Document */
+/* Copyright by © 2012 andersdenkend */
+
+/*-------------------- 
+	Simple Reset 
+--------------------*/
+*						{
+						margin:0;
+						padding:0;															
+						outline:0;
+						list-style-type:none;
+						text-decoration:none;
+						letter-spacing:0.2px;
+						}
+/*end Reset*/
+																	
+/*-------------------- 
+	Main Styles 
+--------------------*/						
+body						{
+						font-family:Yanone Kaffeesatz;
+						font-weight:400;
+						font-family:arial, sans serif;
+						font-size:40px;
+						}						
+
+#wrapper				{
+						width:100%;
+						margin:auto;
+						}						
+						
+h1						{
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						color:#ece3d1;
+						font-size:42px;
+						}
+																	
+h2						{
+						font-size:45px;
+						font-weight:100;
+						}
+
+h3						{ 
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						font-size:37px;
+						text-align:left;
+						color:#3a3435;
+						}
+
+h4, h4 a					{	
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						font-size:25px;  
+						color:#3a3435;
+						margin-bottom:0px;
+						margin-left:-20px;
+						}						
+
+h5						{
+						font-family:Yanone Kaffeesatz;
+						font-style:italic;
+						font-weight:400;
+						letter-spacing:1px;
+						color:#fbefda; 
+						font-size:27px;
+						padding-top:17px; 
+						text-align:center;
+						}
+
+h6, h6 a					{
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						width:141px;
+						font-size:40px;
+						color:#fbefda; 
+						margin-top:-137px;
+						}	
+
+.h8						{
+						display:block;
+						font-weight:700;
+						font-size:27px;
+						line-height:10px;
+						position:relative; top:15px;
+						z-index:80;
+						color:#3a3435;
+						}
+						
+.logo					{
+						width:370px; 
+						margin-top:-30px; 
+						font-family:Yanone Kaffeesatz;
+						}
+
+.logo p					{
+						float:left; 
+						font-size:20px; 
+						color:#ece3d1; 
+						}
+						
+.logo2 					{
+						clear:both; 
+						font-family:Yanone Kaffeesatz; 
+						}	
+	
+.logo2 p					{
+						font-size:48px; 
+						margin-left:325px; 
+						color:#ece3d1; 
+						margin-top:-40px
+						}
+						
+.head					{
+						height:90px;
+						margin:auto;
+						background-image:url(../images/circle_bottom.png);
+						background-repeat:no-repeat;
+						background-position:center;
+						position:relative;
+						z-index:15;
+						margin-top:23px;
+						}
+					
+.middle					{
+				
+						margin-top:40px; 
+						clear:both;
+						}						
+
+.bottom					{
+						position:relative;
+						background-image:url(../images/pattern_spacer.png);
+						background-repeat:repeat-x;
+						height:30px;
+						top:13px;
+						z-index:18;
+						}
+
+.columnTop				{
+						margin-top:90px;
+						}
+						
+#position1, #position2, 
+#position3, #position4	{
+						position:relative;
+						float:left;
+						width:80px;
+						height:70px;
+						background-image:url(../images/ribbon_top.png);
+						z-index:5;
+						left:44.3%; 
+						}
+
+#position1				{ top:-160px;}		
+#position2				{ left:46%; }					
+#position3				{ left:-22.5%; top:80px;}		
+#position4				{ z-index:1; clear:both; left:47%; top:54px; }		
+						
+.hrLeft					{
+						float:left; 
+						color:#3a3435; 
+						margin-right:10px; 
+						margin-top:12px; 
+						display:inline;
+						}	
+						
+.hrRight				{
+						float:left;  
+						margin-left:10px; 
+						color:#3a3435; 
+						margin-top:12px; 
+						display:inline;
+						}
+						
+/*end Main Styles*/
+
+/*-------------------- 
+	H E A D E R 
+--------------------*/												
+#header					{
+						width:100%;
+						height:166px;
+						margin:auto;
+						background-image:url(../images/pattern_header.png);
+						background-repeat:repeat;
+						position:fixed;
+						z-index:3000;
+						top:0;
+						}
+
+#headerInner			{
+						margin:auto;
+						width:960px;
+						}
+#zeiger 					{ 
+						position:relative; 
+						margin-left:90px; 
+						margin-top:-80px; 
+						border:0px solid blue; 
+						}
+						
+#background 				{
+						z-index:4;
+						}
+						
+#background img			{
+						margin-right:-1.18%;
+						z-index:1;
+						}				
+						
+#nav					{ 
+						height:20px;
+						position:absolute;
+						top:50px;
+						
+						}
+						
+#nav ul					{
+						list-style-type:none; 
+						margin-left:30px;
+						}
+						
+#nav ul li					{
+						float:left;
+						}
+			
+#nav ul li a				{
+						bottom:0px;
+						font-family:Yanone Kaffeesatz;
+						font-weight:400;
+						font-size:26px;	
+						color:#ece3d1; 
+						cursor:pointer; 
+						border-bottom:0px solid #4f0307;
+						border-top:0px solid #4f0307;
+						text-decoration:none; 
+						}
+						
+#shade_1_left			{
+						float:left; 
+						margin-right:10px; 
+						color:#ece3d1;  
+						margin-top:13px; 
+						width:18%; 
+						margin-left:23px;
+						}
+						
+#shade_1_right			{
+						float:left;  
+						color:#ece3d1;  
+						margin-top:13px; 
+						width:18%; 
+						margin-left:10px;
+						}						
+					
+#nav .nav_right 			{	
+						position:relative;
+						left:95px;
+						top:-49px;
+						} 
+
+#nav_1					{
+						margin-left:30px;
+						}
+						
+#eins, #zwei, 
+#drei, #vier			{
+						border:0;
+						margin-right:35px; 
+						vertical-align:bottom;
+						}
+	
+/*end Header*/
+						
+/*-------------------- 
+	C O N T E N T
+--------------------*/
+#content				{
+						margin-top:150px;
+						width:100%;
+						}
+						
+/* Content Section: Welcome */					
+#welcome				{
+						position:relative; 
+						z-index:18;
+						width:100%;
+						background-image:url(../images/pattern_grey.png);
+						background-repeat:repeat;
+						text-align:center;
+						font-family:Yanone Kaffeesatz;
+						color:#ece3d1;
+						}
+
+#welcomeInner			{
+						width:960px;
+						margin:auto;
+						}
+						
+#welcome .bottom			{
+						margin-top:110px;
+						}
+						
+.slider-wrapper 			{
+						width:900px;
+						position:relative;
+						top:-387px;
+						left:30px;
+						z-index:10;
+						margin-bottom:-380px;
+						}						
+			
+#frame_slide 			{ 
+						position:relative; 
+						z-index:50;	
+						}													
+/*end Welcome*/	
+
+/* Content Section: About Me */						
+#aboutme				{
+						position:relative;
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						width:100%;
+						background-image:url(../images/pattern_bright.png);
+						background-repeat:repeat;
+						text-align:center;
+					 	margin-top:-24px;
+						font-size:21px;
+						color:#3a3435;
+						}
+
+#aboutme p				{ letter-spacing:0.5px }						
+						
+#aboutmeInner			{
+						position:relative;
+						width:960px;
+						margin:auto;
+						margin-bottom:-130px;
+						}
+						
+#aboutme .middle  		{	
+						margin:0; padding:0px;
+						text-align:left; 
+						line-height:23px;
+						}					
+							
+.middle_left			{
+						float:left;
+						width:300px;
+						margin-right:30px;
+						margin-top:30px
+						}
+
+.middle_p				{
+						font-weight:400;
+						}
+						
+.first_image			{
+						margin-top:10px; margin-left:4px;
+						}
+						
+.second_image			{
+						margin-top:-110px; padding-bottom:10px
+						}
+						
+.middle_middle			{
+						float:left;
+						width:300px;
+						margin-right:30px;
+						margin-top:30px
+						}
+
+.middle_right			{
+						float:left;
+						width:300px;
+						margin-right:0px;
+						margin-top:30px
+						}
+						
+.middle_right ul li		{
+						margin-left:20px;
+						list-style-image:url(../images/arrow.png); 
+						color:#444;	
+						}
+						
+.middle_right ul li p		{
+						color:#444;
+						}
+
+#aboutme .bottomInner	{
+						clear:both;
+						padding-top:80px;
+						width:1000px;
+						}	
+
+#aboutme .bottomInner h3 {
+						
+						margin-bottom:-5px;
+						}
+
+#skills					{
+						margin-bottom:240px;
+						height:170px; 
+						margin-top:80px; 
+						margin-left:-10px;
+						}
+						
+#skills img				{
+						margin-bottom:10px;
+						margin-right:27px;
+						}	
+
+#aboutme .bottom			{
+						margin-bottom:-20px;
+						}
+
+#aboutme h3				{
+						position:relative; padding-left:15px; padding-right:10px; margin:auto; float:left
+						}
+						
+#shade_2_left			{
+						float:left;color:#3a3435; margin-top:12px;
+						}
+						
+#shade_2_right			{
+						float:left; margin-left:10px; color:#3a3435; margin-top:12px;
+						}
+						
+#shade_3_left			{
+						float:left; color:#3a3435; margin-top:23px;
+						}
+						
+#shade_3_right			{
+						float:left; margin-left:10px; color:#3a3435; margin-top:23px;
+						}	
+
+#skill_1, #skill_2,
+#skill_3, #skill_4,
+#skill_5, #skill_6		{ float:left; }						
+/*end About Me */		
+
+/* Content Section: Portfolio */	
+#portfolio				{
+						font-family:Yanone Kaffeesatz;
+						font-size:18px;
+						color:#ece3d1;
+						background-image:url(../images/pattern_grey.png);
+						margin-top:-24px; 
+						width:100%;
+						}
+
+#portfolioInner			{
+						width:960px;
+						margin:auto; 
+						margin-top:22px;
+						}
+
+.icon					{
+						background-image:url(../images/loading.gif);
+						z-index:1000;
+						}
+
+#portfolioNavi			{
+						position:absolute; margin-left:17px
+						}
+						
+#portfolioNavi .picture 	{
+						float:left; margin-top:80px;
+						}
+						
+#filter					{
+						position:relative;
+						float:left;
+						background-image:url(../images/portfolio_ribbon_middle.png);
+						background-repeat:repeat;
+						background-position:left top;
+						height:70px;
+						margin-top:80px;
+						font-size:23px;
+						}
+						
+#filter a				{
+						position:relative;
+						color:#ece3d1; 
+						margin-right:25px;
+						top:16px;
+						letter-spacing:0.09px;
+						}						
+						
+#filter .active 			{	
+						border-bottom:3px solid #BA4B27;
+						}
+						
+#quicksand				{
+						width:960px;
+						clear:both;
+						margin-left:25px;
+						margin-top:150px;
+						display:block;
+						overflow:hidden; 
+						text-align:center;
+						}						
+
+#quicksand ul			{ 
+						margin-top:120px;
+						}
+			
+#quicksand ul li			{
+						float: left;
+						margin-right:10px;
+						width:220px;
+						height:300px;
+						list-style: none outside none;
+						margin-bottom:50px;
+						}				
+
+#quicksand img			{
+						margin-top:14px;
+						margin-bottom:-7px;
+						margin-left:-2px;
+						border:0;
+						}
+						
+#quicksand a				{
+						color:#ece3d1;
+						font-size:16px;
+						text-align:center;
+						}
+
+.picture				{
+						
+						margin-top:115px;
+						margin-left:-20px;
+						}
+						
+.frame					{
+						position:relative; top:-250px;
+						}
+
+#portfolioInner 			{
+						margin-bottom:50px;
+						}
+						
+#stage p					{
+						color:#3a3435; float:left; font-weight:700; 
+						}
+
+.topTitle .hrLeft			{ margin-left:17px }						
+						
+.topTitle				{
+						position:absolute; width:200px; z-index:2300; margin-left:2px; margin-top:-20px;
+						}	
+
+#portfolio .bottom		{
+						margin-top:-20px;
+						}
+						
+/*end Portfolio */		
+						
+/* Content Section: Features */	
+#features				{
+						font-family:Yanone Kaffeesatz;
+						font-weight:300;
+						width:100%;
+						background-image:url(../images/pattern_bright.png);
+						background-repeat:repeat;
+						margin-top:-24px; 
+						font-size:21px;
+						color:#3a3435;
+						}
+
+#features p				{
+						letter-spacing:0.5px;
+						}
+
+#features h3				{
+						position:relative; float:left
+						}
+						
+#featuresInner			{
+						width:960px;
+						margin:auto;
+						margin-bottom:240px;
+						}						
+
+#featuresInner ul li		{
+						margin-top:30px; 
+						}
+						
+#column1				{
+						width:960px;
+						line-height:26px;
+						margin-bottom:200px;
+						width:960px;
+						}
+						
+#column1 .justiLeft		{ margin-right:30px; }		
+#column1 .justiMiddle	{ margin-right:30px; }			
+
+#column1 ul				{
+						clear:both;
+						}
+
+#column1 ul li				{
+						width:299px;
+						float:left;
+						}
+
+#column2				{
+						clear:both;
+						line-height:26px;
+						margin-bottom:450px;
+						width:960px;
+						}
+
+#column2 strong			{
+						font-weight:bold;
+						float:left;
+						}
+						
+#column2 ul li				{
+						float:left;
+						}
+						
+.longColumn				{
+						width:619px;
+						margin-right:40px;
+						}
+						
+.smallColumn			{
+						width:299px;
+						}
+					
+#column3				{
+						clear:both;
+						line-height:26px;
+						margin-bottom:700px;
+						width:960px;
+						}
+
+#column3 ul li				{
+						width:459px;
+						float:left;
+						}
+						
+#column3 .justiLeft		{ 
+						margin-right:40px; 
+						}						
+						
+#column4				{
+						line-height:26px;
+						margin-right:-90px;
+						margin-bottom:950px;
+						width:960px;
+						}
+
+#column4 ul li				{
+						width:459px;
+						float:left;
+						}
+
+#column4 .firstLi		{
+						margin-right:40px;
+						}
+						
+#column5				{
+						line-height:26px;
+						width:960px;
+						}
+
+#column5 p				{
+						float:left;		
+						}
+
+#column5 ul				{
+						clear:both;
+						}
+						
+#column5 ul li				{
+						width:299px;
+						float:left;
+						}
+
+.redhighlight			{ margin-right:30px; }		
+
+.greenmarked			{ margin-right:30px; }				
+						
+.redhighlight strong 		{
+						background-color:#ca2e3e;
+						float:left;
+						}
+						
+.greenmarked strong		{
+						background-color:#93997d;
+						float:left;
+						}
+						
+.dotted 	 				{
+						float:left;
+						
+						line-height:25px;
+						}
+						
+.dotted strong			{
+						border-bottom:1px #bf4d28 solid;
+						}
+						
+.leftBlockquote			{
+						font-family:Yanone Kaffeesatz;
+						font-weight:400;
+						font-style:italic;
+						font-size:30px;
+						float:left;
+						margin-right:15px;
+						margin-top:10px;
+						}
+						
+.rightBlockquote		{
+						font-family:Yanone Kaffeesatz;
+						font-weight:400;
+						font-style:italic;
+						font-size:30px;
+						float:right;
+						margin-left:15px;
+						margin-top:10px; 
+						margin-right:5px;
+						}
+/*end Features */	
+
+/* Content Section: Contact */	
+#contact				{
+						width:100%;
+						height:800px;
+						background-image:url(../images/pattern_grey.png);
+						background-repeat:repeat;
+					 	margin-top:-24px; 
+						font-size:22px;	
+						font-family:Yanone Kaffeesatz;
+						text-decoration:none;
+						letter-spacing:0.5px;
+						}
+
+#contact strong, p, a		{ letter-spacing:0.5px; }						
+						
+#contactInner			{
+						width:960px;
+						margin:auto;
+						}
+
+#contact .firstLi		{
+						float:left; width:480px;
+						}
+
+.firstLi .firstHr		{
+						float:left;color:#fbefda; margin-top:26px;
+						}
+						
+.firstLi .secondHr		{
+						float:left; margin-left:10px; color:#fbefda; margin-top:26px;
+						}
+
+#contact h1				{
+						position:relative; padding-left:15px; padding-right:10px; margin:auto; float:left
+						}
+						
+#contact .secondLi		{
+						float:right; width:480px; margin-right:-50px;
+						}
+
+.secondLi .firstHr		{
+						float:left; color:#fbefda; margin-top:26px;
+						}
+						
+.secondLi .secondHr		{
+						float:left; margin-left:10px; color:#fbefda; margin-top:26px;
+						}
+						
+#contactable			{
+						float:left;
+						margin-right:80px;
+						margin-top:20px;
+						}
+
+#right					{
+						float:left;
+						margin-top:55px;
+						}
+
+#right table	 			{
+						color:#ece3d1;
+						}
+
+#right a					{
+						text-decoration:none;
+						color:#ece3d1;
+						border-bottom:0px #bf4d28 solid;
+						}
+
+#rightsocial			{
+						display:block;
+						width:430px;
+						border:0;
+						width:470px; 
+						margin-right:-40px
+						}
+
+#rightsocial .firstHr	{
+						float:left; color:#fbefda; margin-top:87px;
+						}
+						
+#rightsocial .secondHr	{
+						float:left; margin-left:10px; color:#fbefda; margin-top:87px; 
+						}						
+						
+#rightsocial img			{
+						border:0;
+						}
+
+#rightsocial ul			{
+						clear:both; margin-top:0px;
+						}
+						
+#rightsocial ul li			{
+						float:left;
+						margin-right:12px;
+						}
+						
+#rightsocial a			{
+						display:inline-block;
+						}
+						
+#rightsocial a:hover	{
+						color:#ece3d1;
+						border-bottom:none;
+						}
+
+#right h1				{
+						color:#ece3d1;
+						padding-top:60px;
+						padding-bottom:20px;
+						}
+						
+#right p					{
+						color:#ece3d1;
+						}
+						
+#right strong				{
+						color:#ece3d1;
+						font-weight:bold;
+						}
+						
+#right td				{
+						color:#ece3d1;
+						width:150px;
+						padding-bottom:30px;
+						}
+					
+/*end Contact */
+/*end Content */
+
+/*--------------------
+	F O O T E R
+--------------------*/
+
+#footer					{	
+						position:relative;
+						z-index:4;
+						background-image:url(../images/pattern_bottom.png);
+						background-repeat:repeat;
+						width:100%;
+						height:173px;
+						text-align:center;
+						margin-top:-5px;
+						}
+
+#footerInner			{
+						width:960px;
+						margin:auto;
+						}
+						
+#ribbon					{
+						width:340px;
+						padding-top:10px;
+						margin:auto;
+						}
+
+#ribbon img				{
+						margin-top:10px;
+						margin-left:10px;
+						}
+
+#ribbon p				{
+						margin-top:70px;
+						font-size:12px; 
+						margin-left:20px;
+						}
+
+#ribbon h5				{
+						margin-top:-91px; color:#fbefda; font-style:normal; margin-left:20px;
+						}
+						
+#footer .gotop			{
+						margin-top:0px;
+						color:black; 
+						}
+												
+/*end Footer */
+
+/*-------------------- 
+	J U M P S
+--------------------*/					
+#jumptop				{
+						margin-top:0px;
+						position:absolute;
+						top:-90px;
+						}
+						
+#jump1, #jump2, 
+#jump3,	#jump4			{
+						position:relative;
+						top:-87px;
+						}					
+					
+
+					
+						
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						

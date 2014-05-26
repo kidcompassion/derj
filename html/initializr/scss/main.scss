@@ -26,8 +26,6 @@ $base-padding: 20px;
 	display: block;
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1400px) { 
 	
 	/*GLOBAL
 	===========================*/
@@ -37,13 +35,22 @@ $base-padding: 20px;
 	===========================*/
 	.navbar {
 		background-color: transparent;
-		background-image: none;
+		background-image: url('../img/pattern_header.png');
+		position: fixed;
+		top: 0;
+		width: 100%;
+		clear: both;
+		padding: $base-padding;
+		margin: 0;
+
 
 		.main-nav {
-			background: red;
+			margin: 0;
+			padding: 0;
 			overflow: hidden;
 			li {
 				list-style-type: none;
+				padding: $base-padding;
 
 			}
 			li.left{
@@ -64,7 +71,17 @@ $base-padding: 20px;
 		}	
 	}
 
-}
+
+
+
+	/*CONTENT
+	======================================*/
+
+	.wrapper {
+		margin-top: 160px;
+
+	}
+
 
 
 /* Landscape phones and down */
@@ -73,11 +90,8 @@ $base-padding: 20px;
 /*NAVBAR
 	===========================*/
 	.navbar {
-		background-color: transparent;
-		background-image: none;
 
 		.main-nav {
-			background: red;
 			overflow: hidden;
 			li {
 				list-style-type: none;

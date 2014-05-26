@@ -31,34 +31,36 @@
   background-color: transparent;
   background-image: url("../img/pattern_header.png");
   position: fixed;
+  border: none;
+  border-radius: 0;
   top: 0;
   width: 100%;
   clear: both;
   padding: 20px;
   margin: 0;
 }
-/* line 47, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 .navbar .main-nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-/* line 51, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 .navbar .main-nav li {
   list-style-type: none;
   padding: 20px;
 }
-/* line 56, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .navbar .main-nav li.left {
   float: left;
   background: blue;
 }
-/* line 61, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 .navbar .main-nav li.right {
   float: right;
   background: green;
 }
-/* line 65, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .navbar .main-nav li.center {
   float: none;
   background-color: yellow;
@@ -68,7 +70,7 @@
 
 /*CONTENT
 ======================================*/
-/* line 80, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .wrapper {
   margin-top: 160px;
 }
@@ -77,23 +79,23 @@
 @media (max-width: 767px) {
   /*NAVBAR
   	===========================*/
-  /* line 94, ../scss/main.scss */
+  /* line 96, ../scss/main.scss */
   .navbar .main-nav {
     overflow: hidden;
   }
-  /* line 96, ../scss/main.scss */
+  /* line 98, ../scss/main.scss */
   .navbar .main-nav li {
     list-style-type: none;
   }
-  /* line 99, ../scss/main.scss */
+  /* line 101, ../scss/main.scss */
   .navbar .main-nav li.left {
     float: none;
   }
-  /* line 103, ../scss/main.scss */
+  /* line 105, ../scss/main.scss */
   .navbar .main-nav li.right {
     float: none;
   }
-  /* line 110, ../scss/main.scss */
+  /* line 112, ../scss/main.scss */
   .navbar .main-nav li.nav-option {
     display: none;
   }

@@ -2,31 +2,36 @@
 ============================*/
 /*GLOBAL
 ============================*/
-/* line 13, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 .left {
   float: left;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 16, ../scss/main.scss */
 .right {
   float: right;
 }
 
-/* line 21, ../scss/main.scss */
+/* line 20, ../scss/main.scss */
 .hide {
   display: none;
 }
 
-/* line 25, ../scss/main.scss */
+/* line 24, ../scss/main.scss */
 .show {
   display: block;
 }
 
 /*GLOBAL
 ===========================*/
+/* line 32, ../scss/main.scss */
+body {
+  background-image: url("../img/pattern_grey.png");
+}
+
 /*NAVBAR
 ===========================*/
-/* line 36, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 .navbar {
   background-color: transparent;
   background-image: url("../img/pattern_header.png");
@@ -36,66 +41,71 @@
   top: 0;
   width: 100%;
   clear: both;
-  padding: 20px;
   margin: 0;
 }
-/* line 49, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 .navbar .main-nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-/* line 53, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .navbar .main-nav li {
   list-style-type: none;
-  padding: 20px;
 }
-/* line 58, ../scss/main.scss */
+/* line 59, ../scss/main.scss */
 .navbar .main-nav li.left {
   float: left;
   background: blue;
 }
-/* line 63, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .navbar .main-nav li.right {
   float: right;
   background: green;
 }
-/* line 67, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .navbar .main-nav li.center {
-  float: none;
-  background-color: yellow;
+  height: 140px;
+  background-size: cover;
+  background-image: url("../img/header_middle.png");
+  background-repeat: no-repeat;
   float: left;
   text-align: center;
 }
 
 /*CONTENT
 ======================================*/
-/* line 82, ../scss/main.scss */
+/* line 85, ../scss/main.scss */
 .wrapper {
   margin-top: 160px;
+}
+
+/* line 91, ../scss/main.scss */
+#aboutme, #contact {
+  background-image: url("../img/pattern_bright.png");
 }
 
 /* Landscape phones and down */
 @media (max-width: 767px) {
   /*NAVBAR
   	===========================*/
-  /* line 96, ../scss/main.scss */
+  /* line 107, ../scss/main.scss */
   .navbar .main-nav {
     overflow: hidden;
   }
-  /* line 98, ../scss/main.scss */
+  /* line 109, ../scss/main.scss */
   .navbar .main-nav li {
     list-style-type: none;
   }
-  /* line 101, ../scss/main.scss */
+  /* line 112, ../scss/main.scss */
   .navbar .main-nav li.left {
     float: none;
   }
-  /* line 105, ../scss/main.scss */
+  /* line 116, ../scss/main.scss */
   .navbar .main-nav li.right {
     float: none;
   }
-  /* line 112, ../scss/main.scss */
+  /* line 123, ../scss/main.scss */
   .navbar .main-nav li.nav-option {
     display: none;
   }

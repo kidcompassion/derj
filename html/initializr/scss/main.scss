@@ -9,7 +9,6 @@ $base-padding: 20px;
 /*GLOBAL
 ============================*/
 
-
 .left{
 	float: left;	
 }
@@ -30,6 +29,10 @@ $base-padding: 20px;
 	/*GLOBAL
 	===========================*/
 
+	body {
+		background-image: url('../img/pattern_grey.png');
+	}
+
 
 	/*NAVBAR
 	===========================*/
@@ -42,7 +45,6 @@ $base-padding: 20px;
 		top: 0;
 		width: 100%;
 		clear: both;
-		padding: $base-padding;
 		margin: 0;
 
 
@@ -52,7 +54,6 @@ $base-padding: 20px;
 			overflow: hidden;
 			li {
 				list-style-type: none;
-				padding: $base-padding;
 
 			}
 			li.left{
@@ -65,8 +66,10 @@ $base-padding: 20px;
 				background: green;
 			}
 			li.center {
-				float: none;
-				background-color: yellow;
+				height: 140px;
+				background-size: cover;
+				background-image: url('../img/header_middle.png');
+				background-repeat: no-repeat;
 				float: left;
 				text-align: center;
 			}
@@ -83,6 +86,14 @@ $base-padding: 20px;
 		margin-top: 160px;
 
 	}
+
+
+	#aboutme, #contact {
+		background-image: url('../img/pattern_bright.png');
+	}
+
+
+
 
 
 

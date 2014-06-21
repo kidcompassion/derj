@@ -1,73 +1,166 @@
+/* RESET CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 19, ../scss/main.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, ../scss/main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, ../scss/main.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, ../scss/main.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, ../scss/main.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../scss/main.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, ../scss/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* VARIABLES
 ============================*/
 /*GLOBAL
 ============================*/
-/* line 12, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .left {
   float: left;
 }
 
-/* line 16, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 .right {
   float: right;
 }
 
-/* line 20, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 .hide {
   display: none;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .show {
   display: block;
 }
 
+/* line 81, ../scss/main.scss */
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
 /*GLOBAL
 ===========================*/
-/* line 32, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 body {
   background-image: url("../img/pattern_grey.png");
 }
 
 /*NAVBAR
 ===========================*/
-/* line 39, ../scss/main.scss */
+/* line 97, ../scss/main.scss */
 .navbar {
+  position: fixed;
+  z-index: 999;
   background-color: transparent;
   background-image: url("../img/pattern_header.png");
-  position: fixed;
   border: none;
   border-radius: 0;
+  margin: 0px;
   top: 0;
   width: 100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   clear: both;
-  margin: 0;
 }
-/* line 51, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
+.navbar a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+}
+/* line 116, ../scss/main.scss */
+.navbar .container-liquid {
+  position: relative;
+  background-position: center;
+  background-image: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 156px;
+}
+/* line 127, ../scss/main.scss */
 .navbar .main-nav {
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 56px;
   overflow: hidden;
+  background-color: red;
+  width: 80%;
+  margin: 0 10%;
+  background-repeat: no-repeat;
 }
-/* line 55, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .navbar .main-nav li {
   list-style-type: none;
+  background-color: green;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  padding: 10px;
 }
-/* line 59, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .navbar .main-nav li.left {
   float: left;
-  background: blue;
 }
-/* line 64, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 .navbar .main-nav li.right {
   float: right;
-  background: green;
 }
-/* line 68, ../scss/main.scss */
+/* line 153, ../scss/main.scss */
 .navbar .main-nav li.center {
-  height: 140px;
   background-size: cover;
-  background-image: url("../img/header_middle.png");
   background-repeat: no-repeat;
   float: left;
   text-align: center;
@@ -75,12 +168,40 @@ body {
 
 /*CONTENT
 ======================================*/
-/* line 85, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 .wrapper {
-  margin-top: 160px;
+  margin: 0 auto;
+  top: 155px;
+  position: relative;
+  z-index: 0;
 }
 
-/* line 91, ../scss/main.scss */
+/*WELCOME
+======================================*/
+/* line 179, ../scss/main.scss */
+.wrap {
+  width: 100%;
+  background: green;
+}
+/* line 182, ../scss/main.scss */
+.wrap .stripe {
+  background-image: url(../img/circle_bottom.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  padding-top: 60px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 189, ../scss/main.scss */
+.wrap .stripe .carousel {
+  background-color: red;
+  height: 400px;
+  width: 80%;
+  padding: 20px;
+  margin: 40px auto;
+}
+
+/* line 199, ../scss/main.scss */
 #aboutme, #contact {
   background-image: url("../img/pattern_bright.png");
 }
@@ -89,23 +210,28 @@ body {
 @media (max-width: 767px) {
   /*NAVBAR
   	===========================*/
-  /* line 107, ../scss/main.scss */
+  /* line 214, ../scss/main.scss */
+  .navbar .container-liquid {
+    width: 100%;
+    margin: 0px;
+  }
+  /* line 219, ../scss/main.scss */
   .navbar .main-nav {
     overflow: hidden;
   }
-  /* line 109, ../scss/main.scss */
+  /* line 221, ../scss/main.scss */
   .navbar .main-nav li {
     list-style-type: none;
   }
-  /* line 112, ../scss/main.scss */
+  /* line 224, ../scss/main.scss */
   .navbar .main-nav li.left {
     float: none;
   }
-  /* line 116, ../scss/main.scss */
+  /* line 228, ../scss/main.scss */
   .navbar .main-nav li.right {
     float: none;
   }
-  /* line 123, ../scss/main.scss */
+  /* line 235, ../scss/main.scss */
   .navbar .main-nav li.nav-option {
     display: none;
   }
